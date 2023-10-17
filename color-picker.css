@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-container {
+    display: grid;
+    /* flex-direction: column; */
+    text-align: center;
+    row-gap: 200px;
+    /* flex-grow: 1; */
+  }
+
+  div{
+    text-align: center;
+  }
+
+  button {
+    
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+
+  h1 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    color: #333; /* Change the color of the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
