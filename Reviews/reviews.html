@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reviews.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body id = 'body'>
+        
+        <h1>Our Reviews</h1>
+        <div class='main-div'>
+            <div id="img"></div>
+            <p id="name"></p>
+            <p id="position"></p>
+            <p id="description">Passionate about handling, processing and leveraging data to drive informed decision-making. Experienced in data visualization and reporting, effectively communicating findings to stakeholders.</p>
+            <div>
+                <button class='navigation' onclick="
+                    if (count-1>0){
+                        count--;
+                        display();
+                    }
+                    else{
+                        count=reviews.length-1;
+                        display();
+                    }
+                    ">&#8592</button>
+                <button class='navigation' onclick="
+                    if (count+1<reviews.length){
+                        count++;
+                        display();
+                    }
+                    else{
+                        count=0;
+                        display();
+                    }
+                ">&#8594</button>
+            </div>
+            <button onclick="surprise();">Surprise me</button>
+        </div>
+        
+        
+        <script src="reviews.js"></script>
+    </body>
+</html>
